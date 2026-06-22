@@ -1,28 +1,10 @@
-const navbarLinks = {
-  home: true,
-  publications: true,
-  research: true,
-  jobs: true,
-  contact: true,
-};
-
 const globalData = {
-  image: "../files/profile.jpg",
-  resume: "../files/resume.pdf",
-  enAddress: "Your address ",
-  faAddress: " آدرس شما ",
-  phone: "09120000000",
-  email: "example@email.com",
-  twitterTitle: "",
-  twitter: "",
-  whatsappTitle: "WhatsApp number",
-  whatsapp: "https://api.whatsapp.com/send?phone=your_number",
-  googleScholarTitle: "Google Scholar title",
-  googleScholar: "@googleScholar",
-  linkedinTitle: "Linkedin Username",
-  linkedin: "https://www.linkedin.com/in/your_username/",
-  githubTitle: "Github Username",
-  github: "https://github.com/your_username",
-  orcidTitle: "Orcid Username",
-  orcid: "https://orcid.com/your_username",
+    name: "Xiongxiang Cheng",
+    profilePic: "files/profile.jpg",
+    email: "20234388@stu.neu.edu.cn",
+    phone: "(+86) 19848083415",
+    location: "Shenyang, Liaoning 110819, China",
+    // 如果你有相关链接，请补全下方的内容，如果没有可留空或删除对应行
+    github: "https://github.com/XiongxiangCheng",
+    resumeUrl: "files/resume260623.pdf"
 };
