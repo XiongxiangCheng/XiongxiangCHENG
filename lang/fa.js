@@ -1,128 +1,64 @@
-const faNavbarData = {
-  title: " نام شما ",
-  Home: " خانه ",
-  publications: " مقالات ",
-  Research: " تحقیقات ",
-  Jobs: " سوابق شغلی ",
-  Contact: " ارتباط با من ",
-};
+const education = [
+  {
+    title: "Northeastern University (China, Project 985)",
+    degree: "B.A. in Materials Science and Engineering",
+    date: "Sep. 2023 - Jun. 2027 (Expected)",
+    details: "GPA: 86.034/100 - Rank: 15%. Courses: Properties of Materials (4/92), Dynamics (98), Intelligent Energy Storage Systems (94)."
+  },
+  {
+    title: "Université de Toulouse (France)",
+    degree: "B.A. in ELECTRONIQUE, ENERGIE ELECTRIQUE, AUTOMATIQUE",
+    date: "Sep. 2023 - Jun. 2027 (Expected)",
+    details: "Courses: Digital Data Processing (96), Nonlinear Dynamical Systems (90), Mathematics."
+  }
+];
 
-const faHomePageData = {
-  name: "  نام شما ",
-  jobTitle: "  عنوان شغلی ",
-  home_title: " درباره من ",
-  home_content: ` <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد </p>
-    <h2 class='title'> کارهای من </h2>
-    <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد. </p>
-    <ul>
-      <li> عنوان تستی </li>
-      <li>  عنوان تستی  2  </li>
-      <li> عنوان تستی 3  </li>
-    </ul>
-  `,
-};
+const experience = [
+  {
+    title: "Research on Near-Optimal Control of Nonlinear Systems Based on SVR",
+    role: "Project Leader | Supervisor: Prof. Hanguang Su",
+    date: "2024.02 - Present",
+    details: "• Proposed a Value Iteration-based near-optimal control scheme specifically targeting continuous-time affine nonlinear systems.\n• Innovatively integrating SVR into the ADP framework to replace neural networks, effectively overcoming local optima.\n• Enabling online optimal decision-making for partially unknown dynamics via Integral Reinforcement Learning without initial stabilizing policies.\n• Rigorously proving continuous-time Value Iteration convergence and SVR weight stability via convex optimization theory."
+  },
+  {
+    title: "Project on High-Quality Development Special Project No.179, MIIT",
+    role: "Assistant | Supervisor: Prof. Hanguang Su",
+    date: "2024.08 - 2026.07",
+    details: "• Collaborating with project team members to collect the necessary information and data.\n• Contributed to the optimal control research for the drafting of three invention patents related to wafer defect detection algorithms."
+  },
+  {
+    title: "Research on Multi-tier Energy Storage Collaborative Control Device Manufacturing",
+    role: "Member | Supervisor: Prof. Hanguang Su",
+    date: "2024.12 - 2025.12",
+    details: "• Developed the DC Motor and Transformer Parameter Calculator (Software Copyright: 2025SR0345659) to accelerate the hardware calibration process.\n• Integrated Long Short-Term Memory networks into the ADP framework to predict load fluctuations and optimize real-time energy distribution."
+  }
+];
 
-const faPublicationsPageData = {
-  type_one_title: "مقالات منتشر شده",
+const publications = [
+  {
+    title: "Patent on Invention: A Support Vector Regression-Based Control Approach for Approximate Dynamic Programming",
+    venue: "Patent Granted (Application No.: 202510637337.1)",
+    date: "2025.08",
+    authors: "Xiongxiang Cheng (First Author)"
+  },
+  {
+    title: "Parameter Calculator for DC Motors and Transformers (DC-TCalc) V1.0",
+    venue: "Software Copyright (Granted, Reg. No.: 2025SR0345659)",
+    date: "2025.02",
+    authors: "Xiongxiang Cheng (Second Author)"
+  }
+];
 
-  type_one_items: [
-    {
-      title: `رقصیدن با ضربان تغییرات اقلیمی: مطالعه فریم‌های بصری در TikTok از طریق شکاف چپ و راست میان سیاستمداران ایالات متحده (با ). `,
-      abstract: `سیاستمداران در سراسر طیف سیاسی در تلاش برای دسترسی به رای دهندگان جوان با تولید ویدیوهای اصلی به TikTok رفته اند. این روند جدید، TikTok را به حلقه قطبی جدید در نبرد ارتباطات سیاسی تبدیل کرده است و نفوذ حزبی در مورد موضوعاتی مانند تغییرات آب و هوا را عمیق تر می کند. با این حال `,
-      date: "",
-      link: "http://link.com",
-      github: "",
-      writers: ["علی احمدی", " سارا امینی "],
-    },
-    {
-      title: ` "اکنون شما به زبان من صحبت می کنید" شفافیت ویژه زبان و مذاکرات قانونی در شورای وزیران اتحادیه اروپا. (با ).`,
-      abstract: `سیاستمداران در سراسر طیف سیاسی در تلاش برای دسترسی به رای دهندگان جوان با تولید ویدیوهای اصلی به TikTok رفته اند. این روند جدید، TikTok را به حلقه قطبی جدید در نبرد ارتباطات سیاسی تبدیل کرده است و نفوذ حزبی در مورد موضوعاتی مانند تغییرات آب و هوا را عمیق تر می کند. با این حال `,
-      date: "1996",
-      link: "",
-      github: "http://github.com",
-      writers: ["علی احمدی"],
-    },
-  ],
+const awards = [
+  { title: "French Government Scholarship (6 recipients nationwide)", date: "2026.05" },
+  { title: "Honorable Mention, Mathematical Contest In Modeling", date: "2026.05" },
+  { title: "Outstanding Student Pacesetter & Weichai Power Scholarship (Top 1 of Major)", date: "2025.12" },
+  { title: "First-class Scholarship (Top 1 of Major) & National Best Team Award", date: "2025.11" },
+  { title: "Outstanding Student, Northeastern University", date: "2024.12" },
+  { title: "Second-class Scholarship, Northeastern University", date: "2024.11" }
+];
 
-  type_two_title: "مقالات تحت بررسی ",
-  type_two_items: [
-    {
-      title: `رقصیدن با ضربان تغییرات اقلیمی: مطالعه فریم‌های بصری در TikTok از طریق شکاف چپ و راست میان سیاستمداران ایالات متحده (با ). `,
-      abstract: `سیاستمداران در سراسر طیف سیاسی در تلاش برای دسترسی به رای دهندگان جوان با تولید ویدیوهای اصلی به TikTok رفته اند. این روند جدید، TikTok را به حلقه قطبی جدید در نبرد ارتباطات سیاسی تبدیل کرده است و نفوذ حزبی در مورد موضوعاتی مانند تغییرات آب و هوا را عمیق تر می کند. با این حال `,
-      date: "",
-      link: "http://link.com",
-      github: "",
-      writers: [],
-    },
-    {
-      title: ` "اکنون شما به زبان من صحبت می کنید" شفافیت ویژه زبان و مذاکرات قانونی در شورای وزیران اتحادیه اروپا. (با ).`,
-      abstract: `سیاستمداران در سراسر طیف سیاسی در تلاش برای دسترسی به رای دهندگان جوان با تولید ویدیوهای اصلی به TikTok رفته اند. این روند جدید، TikTok را به حلقه قطبی جدید در نبرد ارتباطات سیاسی تبدیل کرده است و نفوذ حزبی در مورد موضوعاتی مانند تغییرات آب و هوا را عمیق تر می کند. با این حال `,
-      date: "1996",
-      link: "http://link.com",
-      github: "http://github.com",
-      writers: ["علی احمدی", " سارا امینی "],
-    },
-  ],
-
-  type_three_title: "فصل های کتاب ",
-  type_three_items: [
-    {
-      title: `رقصیدن با ضربان تغییرات اقلیمی: مطالعه فریم‌های بصری در TikTok از طریق شکاف چپ و راست میان سیاستمداران ایالات متحده (با ). `,
-      abstract: `سیاستمداران در سراسر طیف سیاسی در تلاش برای دسترسی به رای دهندگان جوان با تولید ویدیوهای اصلی به TikTok رفته اند. این روند جدید، TikTok را به حلقه قطبی جدید در نبرد ارتباطات سیاسی تبدیل کرده است و نفوذ حزبی در مورد موضوعاتی مانند تغییرات آب و هوا را عمیق تر می کند. با این حال `,
-      date: "",
-      link: "http://link.com",
-      github: "",
-      writers: [],
-    },
-    {
-      title: ` "اکنون شما به زبان من صحبت می کنید" شفافیت ویژه زبان و مذاکرات قانونی در شورای وزیران اتحادیه اروپا. (با ).`,
-      abstract: `سیاستمداران در سراسر طیف سیاسی در تلاش برای دسترسی به رای دهندگان جوان با تولید ویدیوهای اصلی به TikTok رفته اند. این روند جدید، TikTok را به حلقه قطبی جدید در نبرد ارتباطات سیاسی تبدیل کرده است و نفوذ حزبی در مورد موضوعاتی مانند تغییرات آب و هوا را عمیق تر می کند. با این حال `,
-      date: "1996",
-      link: "http://link.com",
-      github: "http://github.com",
-      writers: ["علی احمدی"],
-    },
-  ],
-
-  type_four_title: "",
-  type_four_items: [],
-};
-
-const faResearchPageData = {
-  title: " تحقیقات ",
-  content: `
-    <div class='research_content'>
-        <p>هدف تحقیق من ترکیب سه زیر زمینه اصلی علوم اجتماعی محاسباتی، از جمله تجزیه و تحلیل داده های رسانه های اجتماعی، تجزیه و تحلیل شبکه، و مدل سازی مبتنی بر عامل، برای مطالعه مسائل مختلف علوم اجتماعی است. در زیر می توانید خلاصه ای از پروژه های گذشته و فعلی من را مشاهده کنید. </p>
-        <h2> شناسایی و شناسایی افراط گرایان ایدئولوژیک داخلی ایالات متحده </h2>
-        <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد. </p>
-        <img src='../files/images/research.png' />
-        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
-    </div>
-  `,
-};
-
-const faJobsPageData = {
-  title: " سوابق شغلی ",
-  items: [
-    {
-      title: `عنوان شغلی `,
-      company: " نام شرکت ",
-      startData: "11 شهریور 1401 ",
-      endDate: "11 مرداد 1402",
-      location: " برلین ",
-      abstract:
-        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.",
-      achievements: [" دستاورد 1 ", " دستاورد 2 ", " دستاورد 3 "],
-    },
-    {
-      title: `عنوان شغلی `,
-      company: " نام شرکت ",
-      startData: "11 شهریور 1401 ",
-      endDate: "",
-      location: " برلین ",
-      abstract:
-        " لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. ",
-      achievements: [" دستاورد 1 ", " دستاورد 2 "],
-    },
-  ],
-};
+const skills = [
+  "Languages: Mandarin (native), English (IELTS 6.5), French (TCF B1)",
+  "Technical Skills: LTspice, Matlab, SPSS, Python, CATIA etc."
+];
